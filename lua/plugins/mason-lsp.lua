@@ -14,10 +14,7 @@ return {
     })
 
     local lspconfig = require("lspconfig")
-    local servers = require("mason-lspconfig").get_installed_servers()
-    for _, server in ipairs(servers) do
-      lspconfig[server].setup({})
-    end
+    local servers = require("mason-lspconfig")
   end,
 }
 
