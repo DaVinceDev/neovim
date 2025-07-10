@@ -7,11 +7,7 @@ return {
   config = function()
     require("mason").setup()
 
-    require("mason-lspconfig").setup({
-      ensure_installed = {
-        "tsserver",
-      },
-    })
+    require("mason-lspconfig").setup({})
 
     local lspconfig = require("lspconfig")
     local servers = require("mason-lspconfig")

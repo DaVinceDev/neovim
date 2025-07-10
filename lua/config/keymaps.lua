@@ -3,6 +3,8 @@
 -- Add any additional keymaps here
 
 -- vim.g.mapleader = " "
-vim.keymap.set("n", "<leader> ", "<cmd>Telescope find_files<CR>")
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>")
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle File Explorer" })
+vim.keymap.set("n", "<leader>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey" })
+
