@@ -10,7 +10,7 @@ return {
     require("mason-lspconfig").setup({})
 
     local lspconfig = require("lspconfig")
-    
+
   lspconfig.nil_ls.setup({
     cmd = {"nil"},
     filetypes = {"nix"},
@@ -26,5 +26,4 @@ return {
     local servers = require("mason-lspconfig")
   end,
 }
-
 
