@@ -9,7 +9,7 @@ return {
         "node_modules",
         "%.git/",
         "dist",
-        "build",
+        -- "build",
         "%.lock",
         "%.DS_Store"
       }
