@@ -8,7 +8,14 @@ vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 vim.keymap.set("n", "<C-a>", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle File Explorer" })
 vim.keymap.set("n", "<leader>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey" })
-vim.keymap.set({"n", "x"}, "y", '"+y')
-vim.keymap.set("n", "Y", '"+y$')
-vim.keymap.set({"n", "x"}, "p", '"+p')
-vim.keymap.set({"n", "x"}, "P", '"+P')
+--
+vim.keymap.set({ "n", "v" }, "y", '"+y', { desc = "Yank to clipboard" })
+vim.keymap.set("n", "Y", '"+Y', { desc = "Yank line to clipboard" })
+
+-- Delete (cut) to system clipboard
+vim.keymap.set({ "n", "v" }, "d", '"+d', { desc = "Cut to clipboard" })
+vim.keymap.set("n", "D", '"+D', { desc = "Cut line to clipboard" })
+
+-- Paste from system clipboard
+vim.keymap.set({ "n", "v" }, "p", '"+p', { desc = "Paste from clipboard" })
+vim.keymap.set({ "n", "v" }, "P", '"+P', { desc = "Paste before from clipboard" })
