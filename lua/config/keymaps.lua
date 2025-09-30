@@ -1,4 +1,5 @@
 -- Keymaps are automatically loaded on the VeryLazy event
+--
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
@@ -19,3 +20,6 @@ vim.keymap.set("n", "D", '"+D', { desc = "Cut line to clipboard" })
 -- Paste from system clipboard
 vim.keymap.set({ "n", "v" }, "p", '"+p', { desc = "Paste from clipboard" })
 vim.keymap.set({ "n", "v" }, "P", '"+P', { desc = "Paste before from clipboard" })
+
+vim.keymap.set("n", "<S-Tab>", ":tabnew<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Tab>", ":tabnext<CR>", { noremap = true, silent = true })
