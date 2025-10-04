@@ -23,3 +23,5 @@ vim.keymap.set({ "n", "v" }, "P", '"+P', { desc = "Paste before from clipboard" 
 
 vim.keymap.set("n", "<S-Tab>", ":tabnew<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Tab>", ":tabnext<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<c-s>", ":w<CR>")
